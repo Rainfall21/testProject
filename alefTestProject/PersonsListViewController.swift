@@ -52,7 +52,7 @@ class PersonsListViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! PersonViewController
+        guard let destinationVC = segue.destination as? PersonViewController else { return }
         
         if let indexPath = tableView.indexPathForSelectedRow {
             destinationVC.selectedPerson = personsArray[indexPath.row].objectID

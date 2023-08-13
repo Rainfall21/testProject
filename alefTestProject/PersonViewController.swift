@@ -41,8 +41,8 @@ class PersonViewController: UITableViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
         if selectedPerson != nil {
-            let object = loadPerson() as! Person
-            var kids = object.kids?.allObjects as! [Kids]
+            guard let object = loadPerson() as? Person else { return }
+            guard let kids = object.kids?.allObjects as? [Kids] else { return }
             for kid in kids {
                 let child = Children(name: kid.kidName, age: Int(kid.kidAge))
                 childrens.append(child)
@@ -151,7 +151,7 @@ class PersonViewController: UITableViewController {
             self.present(alert, animated: true, completion: nil)
         } else if checkAge() {
             if selectedPerson != nil {
-                let object = loadPerson() as! Person
+                guard let object = loadPerson() as? Person else { return }
                 if let age = parentAge.text, let intAge = Int32(age) {
                     object.age = intAge
                 }

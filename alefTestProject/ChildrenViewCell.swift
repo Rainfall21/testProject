@@ -41,8 +41,8 @@ class ChildrenViewCell: UITableViewCell {
     }
     
     @IBAction func deleteKidPressed(_ sender: UIButton) {
-        if delegate != nil {
-            delegate!.deletePressed(cell: self)
+        if let deleteDelegate =  delegate {
+            deleteDelegate.deletePressed(cell: self)
         }
     }
 }
