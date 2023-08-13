@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F090BC1A2A7AFD5100B1E29F /* Kids+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090BC162A7AFD5100B1E29F /* Kids+CoreDataClass.swift */; };
+		F090BC1C2A7AFD5100B1E29F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090BC182A7AFD5100B1E29F /* Person+CoreDataClass.swift */; };
+		F0D986362A77DEA7005AFA75 /* ChildrenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D986342A77DEA7005AFA75 /* ChildrenViewCell.swift */; };
+		F0D986372A77DEA7005AFA75 /* ChildrenViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0D986352A77DEA7005AFA75 /* ChildrenViewCell.xib */; };
+		F0D986392A77E69F005AFA75 /* ChildrenCellDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D986382A77E69F005AFA75 /* ChildrenCellDelegateProtocol.swift */; };
+		F0D9863B2A781FE4005AFA75 /* ChildrenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D9863A2A781FE4005AFA75 /* ChildrenModel.swift */; };
 		F0DBFB902A727A1C00512CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFB8F2A727A1C00512CF9 /* AppDelegate.swift */; };
 		F0DBFB922A727A1C00512CF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFB912A727A1C00512CF9 /* SceneDelegate.swift */; };
-		F0DBFB942A727A1C00512CF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFB932A727A1C00512CF9 /* ViewController.swift */; };
+		F0DBFB942A727A1C00512CF9 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFB932A727A1C00512CF9 /* PersonsListViewController.swift */; };
 		F0DBFB972A727A1C00512CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DBFB952A727A1C00512CF9 /* Main.storyboard */; };
 		F0DBFB9A2A727A1C00512CF9 /* alefTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFB982A727A1C00512CF9 /* alefTestProject.xcdatamodeld */; };
 		F0DBFB9C2A727A1D00512CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DBFB9B2A727A1D00512CF9 /* Assets.xcassets */; };
@@ -17,6 +23,7 @@
 		F0DBFBAA2A727A1D00512CF9 /* alefTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFBA92A727A1D00512CF9 /* alefTestProjectTests.swift */; };
 		F0DBFBB42A727A1D00512CF9 /* alefTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFBB32A727A1D00512CF9 /* alefTestProjectUITests.swift */; };
 		F0DBFBB62A727A1D00512CF9 /* alefTestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFBB52A727A1D00512CF9 /* alefTestProjectUITestsLaunchTests.swift */; };
+		F0DBFBC32A72E29500512CF9 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFBC22A72E29500512CF9 /* PersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F03E20E22A80695000DFFBA2 /* alefTestProject 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "alefTestProject 2.xcdatamodel"; sourceTree = "<group>"; };
+		F090BC162A7AFD5100B1E29F /* Kids+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kids+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F090BC182A7AFD5100B1E29F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F0D986342A77DEA7005AFA75 /* ChildrenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewCell.swift; sourceTree = "<group>"; };
+		F0D986352A77DEA7005AFA75 /* ChildrenViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildrenViewCell.xib; sourceTree = "<group>"; };
+		F0D986382A77E69F005AFA75 /* ChildrenCellDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenCellDelegateProtocol.swift; sourceTree = "<group>"; };
+		F0D9863A2A781FE4005AFA75 /* ChildrenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenModel.swift; sourceTree = "<group>"; };
 		F0DBFB8C2A727A1C00512CF9 /* alefTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alefTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0DBFB8F2A727A1C00512CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0DBFB912A727A1C00512CF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0DBFB932A727A1C00512CF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0DBFB932A727A1C00512CF9 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		F0DBFB962A727A1C00512CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0DBFB992A727A1C00512CF9 /* alefTestProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = alefTestProject.xcdatamodel; sourceTree = "<group>"; };
 		F0DBFB9B2A727A1D00512CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +65,7 @@
 		F0DBFBAF2A727A1D00512CF9 /* alefTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alefTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0DBFBB32A727A1D00512CF9 /* alefTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alefTestProjectUITests.swift; sourceTree = "<group>"; };
 		F0DBFBB52A727A1D00512CF9 /* alefTestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alefTestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0DBFBC22A72E29500512CF9 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +116,17 @@
 		F0DBFB8E2A727A1C00512CF9 /* alefTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				F090BC162A7AFD5100B1E29F /* Kids+CoreDataClass.swift */,
+				F090BC182A7AFD5100B1E29F /* Person+CoreDataClass.swift */,
+				F0D986382A77E69F005AFA75 /* ChildrenCellDelegateProtocol.swift */,
 				F0DBFB8F2A727A1C00512CF9 /* AppDelegate.swift */,
 				F0DBFB912A727A1C00512CF9 /* SceneDelegate.swift */,
-				F0DBFB932A727A1C00512CF9 /* ViewController.swift */,
+				F0DBFB932A727A1C00512CF9 /* PersonsListViewController.swift */,
+				F0DBFBC22A72E29500512CF9 /* PersonViewController.swift */,
+				F0D9863A2A781FE4005AFA75 /* ChildrenModel.swift */,
 				F0DBFB952A727A1C00512CF9 /* Main.storyboard */,
+				F0D986342A77DEA7005AFA75 /* ChildrenViewCell.swift */,
+				F0D986352A77DEA7005AFA75 /* ChildrenViewCell.xib */,
 				F0DBFB9B2A727A1D00512CF9 /* Assets.xcassets */,
 				F0DBFB9D2A727A1D00512CF9 /* LaunchScreen.storyboard */,
 				F0DBFBA02A727A1D00512CF9 /* Info.plist */,
@@ -235,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0DBFB9F2A727A1D00512CF9 /* LaunchScreen.storyboard in Resources */,
+				F0D986372A77DEA7005AFA75 /* ChildrenViewCell.xib in Resources */,
 				F0DBFB9C2A727A1D00512CF9 /* Assets.xcassets in Resources */,
 				F0DBFB972A727A1C00512CF9 /* Main.storyboard in Resources */,
 			);
@@ -261,10 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0DBFB942A727A1C00512CF9 /* ViewController.swift in Sources */,
+				F0D9863B2A781FE4005AFA75 /* ChildrenModel.swift in Sources */,
+				F090BC1C2A7AFD5100B1E29F /* Person+CoreDataClass.swift in Sources */,
+				F090BC1A2A7AFD5100B1E29F /* Kids+CoreDataClass.swift in Sources */,
+				F0DBFBC32A72E29500512CF9 /* PersonViewController.swift in Sources */,
+				F0DBFB942A727A1C00512CF9 /* PersonsListViewController.swift in Sources */,
 				F0DBFB902A727A1C00512CF9 /* AppDelegate.swift in Sources */,
+				F0D986362A77DEA7005AFA75 /* ChildrenViewCell.swift in Sources */,
 				F0DBFB922A727A1C00512CF9 /* SceneDelegate.swift in Sources */,
 				F0DBFB9A2A727A1C00512CF9 /* alefTestProject.xcdatamodeld in Sources */,
+				F0D986392A77E69F005AFA75 /* ChildrenCellDelegateProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,9 +640,10 @@
 		F0DBFB982A727A1C00512CF9 /* alefTestProject.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				F03E20E22A80695000DFFBA2 /* alefTestProject 2.xcdatamodel */,
 				F0DBFB992A727A1C00512CF9 /* alefTestProject.xcdatamodel */,
 			);
-			currentVersion = F0DBFB992A727A1C00512CF9 /* alefTestProject.xcdatamodel */;
+			currentVersion = F03E20E22A80695000DFFBA2 /* alefTestProject 2.xcdatamodel */;
 			path = alefTestProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

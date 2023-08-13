@@ -3,10 +3,11 @@
     <entity name="Kids" representedClassName=".Kids" syncable="YES">
         <attribute name="kidAge" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="kidName" attributeType="String"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="kids" inverseEntity="Person"/>
     </entity>
     <entity name="Person" representedClassName=".Person" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="kids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kids"/>
+        <relationship name="kids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kids" inverseName="parent" inverseEntity="Kids"/>
     </entity>
 </model>
